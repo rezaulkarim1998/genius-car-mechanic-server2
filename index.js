@@ -67,6 +67,9 @@ run().catch(console.dir);
 app.get("/", (req, res) => {
   res.send("this is the genius car machines server");
 });
+app.get('/hello', (req, res) =>{
+  res.send('this is a main node js');
+})
 app.listen(port, () => {
   console.log("running the server", port);
 });
